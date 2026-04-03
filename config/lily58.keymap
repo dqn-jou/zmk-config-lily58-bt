@@ -58,11 +58,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp GRAVE  &kp F1  &kp F2      &kp F3     &kp F4        &kp F5                         &none        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none         &none
-&trans     &trans  &trans      &kp LG(E)  &kp LG(R)     &kp PAGE_UP                    &kp SLASH    &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp MINUS     &kp F12
-&kp CAPS   &trans  &kp DELETE  &kp HASH   &kp UP_ARROW  &kp PAGE_DOWN                  &kp STAR     &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp PLUS      &kp PLUS
-&none      &trans  &kp LEFT    &kp RIGHT  &kp DOWN      &kp BACKSPACE  &none    &none  &kp PERCENT  &kp KP_N0        &kp KP_N0        &kp DOT          &kp KP_ENTER  &kp NON_US_BACKSLASH
-                               &none      &none         &kp ENTER      &none    &none  &kp SPACE    &kp KP_ENTER     &none
+&kp GRAVE  &kp F1  &kp F2    &kp F3          &kp F4        &kp F5                         &none        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none         &none
+&trans     &trans  &trans    &kp LG(E)       &kp LG(R)     &kp PAGE_UP                    &kp SLASH    &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp MINUS     &kp F12
+&kp CAPS   &trans  &trans    &kp LA(DELETE)  &kp UP_ARROW  &kp PAGE_DOWN                  &kp STAR     &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp PLUS      &kp PLUS
+&none      &trans  &kp LEFT  &kp RIGHT       &kp DOWN      &kp BACKSPACE  &none    &none  &kp PERCENT  &kp KP_N0        &kp KP_N0        &kp DOT          &kp KP_ENTER  &kp NON_US_BACKSLASH
+                             &none           &none         &kp ENTER      &none    &none  &kp SPACE    &kp KP_ENTER     &none
             >;
         };
 
@@ -75,11 +75,11 @@
             //                     |      |      |      |        |  |       |          |      |      |
 
             bindings = <
-&studio_unlock  &trans  &trans  &trans      &trans        &trans                             &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans          &trans  &trans  &trans      &trans        &trans                             &trans       &kp HOME      &kp UP        &kp PAGE_UP   &trans        &trans
-&trans          &trans  &trans  &trans      &kt K_VOL_DN  &kt K_VOLUME_UP                    &trans       &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans
-&trans          &trans  &trans  &kt K_PREV  &kt C_PLAY    &kp C_NEXT       &trans    &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH
-                                &trans      &trans        &trans           &trans    &trans  &trans       &trans        &trans
+&studio_unlock  &trans  &trans  &trans      &trans            &trans                             &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans          &trans  &trans  &trans      &trans            &trans                             &trans       &kp HOME      &kp UP        &kp PAGE_UP   &trans        &trans
+&trans          &trans  &trans  &trans      &kt K_VOL_DN      &kt K_VOLUME_UP                    &trans       &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans
+&trans          &trans  &trans  &kt K_PREV  &kt K_PLAY_PAUSE  &kp K_NEXT       &trans    &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH
+                                &trans      &trans            &trans           &trans    &trans  &trans       &trans        &trans
             >;
         };
 
