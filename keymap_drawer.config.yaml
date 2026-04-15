@@ -84,10 +84,10 @@ key_labels:
   # External power
   '&ext_power EP_TOG': 'EXT PWR'
   
-  # Mod-taps - show both behaviors
-  '&mt LEFT_SHIFT A': 
-    tap: 'A'
-    hold: 'SHIFT'
-  '&mt RIGHT_SHIFT O':
-    tap: 'O'
-    hold: 'SHIFT'
+################################# включит обратно  # Mod-taps - show both behaviors
+#  '&mt LEFT_SHIFT A': 
+#    tap: 'A'
+#    hold: 'SHIFT'
+#  '&mt RIGHT_SHIFT O':
+#    tap: 'O'
+#    hold: 'SHIFT'
