@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: lily58}
 layers:
-  Default Layer:
+  default:
   - ['&bootloader', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE]
   - [TAB, Q, W, E, R, T, Y, U, I, O, P, '-']
   - [MUTE, A, S, D, F, G, H, J, K, L, BACKSPACE, '=']
@@ -17,54 +17,56 @@ layers:
     - ''''
     - {t: /, h: \}
   - - '|'
-    - )
+    - ')'
     - LALT
     - LGUI
-    - Lower Layer
-    - {t: SPACE, h: LEFT SHIFT}
-    - {t: RET, h: RIGHT SHIFT}
-    - Raise Layer
+    - '&mo lower'
+    - '&lt lower SPACE'
+    - '&lt raise RET'
+    - '&mo raise'
     - RCTRL
     - ESCAPE
-  Lower Layer:
+
+  lower:
   - [ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11]
-  - [BT CLR, '&cmd_shift_grave_chord', SPACE, SPACE, SPACE, AC CLOSE, SPACE, HOME, PAGE UP, UP ARROW, PRINTSCREEN, F12]
-  - [BT PRV, SPACE, SPACE, SPACE, SPACE, CAPSLOCK, SPACE, END, PAGE DOWN, DOWN, SPACE, SPACE]
-  - - BT NXT
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - AC CUT
-    - AC COPY
-    - AC PASTE
-    - {t: ▽, type: trans}
+  - ['&bt BT_CLR', '&cmd_shift_grave_chord', SPACE, SPACE, SPACE, '&ac AC_CLOSE', SPACE, HOME, PG_UP, UP, PRINTSCREEN, F12]
+  - ['&bt BT_PRV', SPACE, SPACE, SPACE, SPACE, CAPSLOCK, SPACE, END, PG_DN, DOWN, SPACE, SPACE]
+  - - '&bt BT_NXT'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&ac AC_CUT'
+    - '&ac AC_COPY'
+    - '&ac AC_PASTE'
+    - '&trans'
     - SPACE
     - LEFT
     - RIGHT
   - - SPACE
     - SPACE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  Raise Layer:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+
+  raise:
+  - - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
   - - '`'
     - '1'
     - '2'
@@ -76,86 +78,87 @@ layers:
     - '8'
     - '9'
     - '0'
-    - {t: ▽, type: trans}
+    - '&trans'
   - - F1
     - F2
     - F3
     - F4
     - F5
     - F6
-    - {t: ▽, type: trans}
+    - '&trans'
     - LEFT
     - DOWN
     - UP
     - RIGHT
-    - {t: ▽, type: trans}
-  - [F7, F8, F9, F10, F11, F12, AC COPY, AC PASTE, KP PLUS, '-', '=', '[']
+    - '&trans'
+  - [F7, F8, F9, F10, F11, F12, '&ac AC_COPY', '&ac AC_PASTE', KP_PLUS, '-', '=', '[']
   - - ']'
-    - \
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  '3':
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '\\'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+
+  adjust:
+  - - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+  - - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+  - - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+  - - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+  - - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
+    - '&trans'
