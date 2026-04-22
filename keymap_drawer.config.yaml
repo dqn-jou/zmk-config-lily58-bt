@@ -55,13 +55,12 @@ key_labels:
   '&trans': ''
   '&none': ''
   
-  # Layer keys
-  '&mo 1': 'LOWER'
-  '&mo 2': 'RAISE'  
-  '&mo 3': 'ADJUST'
-  '&mo LOWER': 'LOWER'
-  '&mo RAISE': 'RAISE'
-  '&mo ADJUST': 'ADJUST'
+  # Layer keys (updated with new layer names)
+  '&mo lower': 'LOWER'
+  '&mo raise': 'RAISE'
+  '&mo adjust': 'ADJUST'
+  '&lt lower SPACE': 'SPC/LWR'
+  '&lt raise RET': 'ENT/RAISE'
   
   # Bluetooth
   '&bt BT_CLR': 'BT CLR'
@@ -70,6 +69,8 @@ key_labels:
   '&bt BT_SEL 2': 'BT 2'
   '&bt BT_SEL 3': 'BT 3'
   '&bt BT_SEL 4': 'BT 4'
+  '&bt BT_PRV': 'BT PREV'
+  '&bt BT_NXT': 'BT NEXT'
   
   # RGB underglow
   '&rgb_ug RGB_TOG': 'RGB TOG'
@@ -84,10 +85,15 @@ key_labels:
   # External power
   '&ext_power EP_TOG': 'EXT PWR'
   
-################################# включит обратно  # Mod-taps - show both behaviors
-#  '&mt LEFT_SHIFT A': 
-#    tap: 'A'
-#    hold: 'SHIFT'
-#  '&mt RIGHT_SHIFT O':
-#    tap: 'O'
-#    hold: 'SHIFT'
+  # Application commands
+  '&ac AC_CLOSE': 'CLOSE'
+  '&ac AC_CUT': 'CUT'
+  '&ac AC_COPY': 'COPY'
+  '&ac AC_PASTE': 'PASTE'
+  
+  # Navigation
+  PG_UP: 'PG UP'
+  PG_DN: 'PG DN'
+  
+  # Numpad
+  KP_PLUS: 'NP+'
